@@ -1,5 +1,3 @@
-import 'question.dart';
-
 class QuizBrain {
   int _questionNumber = 0;
 
@@ -73,4 +71,11 @@ class QuizBrain {
       _questionNumber = 0;
     }
   }
+}
+
+class Question {
+  String questionText;
+  bool questionAnswer;
+
+  Question(this.questionText, this.questionAnswer);
 }
